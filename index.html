@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelBillinng</title>
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<body>
+    <div class="Head">
+        <h1>TTC - Tastey Tiffn Center</h1>
+    </div>
+    <div>
+        <h2>Our Menu List</h2>
+    </div>
+<div class="Box">
+    <div class="Box1">
+        <table class="Menu_List">
+            <tr>
+                <th>No</th>
+                <th>Available Items</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Idily</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dhosa</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Poori</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Chapathi</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pongal</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="Box2">
+        <form>
+            <div>
+                <label for="my_order" style="color: aliceblue;">What you like to Order</label> <br>
+                <select id="my_order">
+                    <option value="None" selected>None</option>
+                    <option value="Idly">Idly</option>
+                    <option value="Dhosa">Dhosa</option>
+                    <option value="Chapathi">Chapathi</option>
+                    <option value="Poori">Poori</option>
+                    <option value="Pongal">Pongal</option>
+                </select>
+            </div>
+            <div>
+                <label for="Quantity" style="color: aliceblue;">Quantity</label><br>
+                <input type="number" placeholder="Enter the Quantity" id="Quantity">
+            </div>
+            <div>
+                <input type="button" value="OrderNow" onclick="OrderYourFood()" style="color: red;">
+            </div>
+            <hr>
+            <h1 id="totalBillAmt" style="color: aquamarine;"></h1>
+        </form>
+    </div>
+</div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
